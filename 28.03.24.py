@@ -37,7 +37,7 @@ while True:
  elif(p_move == rock and ai_move == paper) or (p_move == paper and ai_move == scissors) or (p_move == scissors and ai_move == rock):
         print("You lose!")
  play_again = input("Do ypu want to play again")
- if play_again == "no":
+ if play_again != "yes":
     print("Thans for playing!")
     break
 
