@@ -4,6 +4,7 @@ rock = 'Rock'
 paper = 'Paper'
 scissors = 'Scissors'
 
+while True:
 p_move = input("Choose, [r]ock, [p]aper ot [s]cissors : ")
 
 if p_move == "r":
@@ -14,6 +15,7 @@ elif p_move == "s":
     p_move = scissors
 else:
     print("Invalid Input. Try again...")
+    continue
 
 sai_move = ""
 
@@ -34,7 +36,10 @@ elif(p_move == rock and ai_move == rock) or (p_move == paper and ai_move == pape
         print("Draw!")
 elif(p_move == rock and ai_move == paper) or (p_move == paper and ai_move == scissors) or (p_move == scissors and ai_move == rock):
         print("You lose!")
-
+play_again = input("Do ypu want to play again")
+if play_again == "no":
+    print("Thans for playing!")
+    break
 
 
 
